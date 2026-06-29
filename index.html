@@ -36,7 +36,7 @@ section:nth-of-type(even){background:rgba(255,255,255,.015)}
 .hero-video-wrap{position:absolute;inset:0;z-index:0}
 .hero-video-wrap video{width:100%;height:100%;object-fit:cover;filter:brightness(.4) saturate(1.3)}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,13,24,.15) 0%,rgba(8,13,24,.55) 50%,#080d18 100%);z-index:1}
-.hero-content{position:relative;z-index:2;max-width:960px;padding:0 24px}
+.hero-content{position:relative;z-index:2;max-width:1200px;padding:0 24px}
 .hero-title-morph{font-family:'Space Grotesk';font-size:3.2rem;font-weight:700;line-height:1.15;margin-bottom:16px;color:#fff;overflow:hidden}
 .morph-letter{display:inline-block;opacity:0;filter:blur(12px);transform:translateY(20px) scale(.8);animation:letterReveal .6s cubic-bezier(.16,1,.3,1) forwards;animation-delay:calc(.8s + var(--i)*.04s)}
 .morph-word{display:inline-block;white-space:nowrap}
@@ -203,11 +203,15 @@ footer .footer-links a:hover{color:#60a5fa}
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1 class="hero-title-morph" id="heroTitle"></h1>
-    <div style="margin-top:20px;margin-bottom:24px;font-size:.88rem;color:#cbd5e1;line-height:1.8;">
-      <div>Yuhan Wu<sup>1</sup>&ensp; Zhao Jin<sup>2</sup>&ensp; Tao Li<sup>2</sup>&ensp; Yuheng Zhang<sup>2</sup>&ensp; Zhengping Che<sup>2</sup>&ensp; Jian Tang<sup>2</sup></div>
-      <div>Zhichao Wang<sup>1</sup>&ensp; Shuo Wang<sup>1</sup>&ensp; Jun Jiang<sup>1</sup>&ensp; Xiaobo Li<sup>1</sup>&ensp; Yanyong Zhang<sup>1</sup>&ensp; Yan Xia<sup>1&dagger;</sup></div>
-      <div style="margin-top:8px;font-size:.78rem;color:#94a3b8;"><sup>1</sup>University of Science and Technology of China&emsp;<sup>2</sup>Beijing Innovation Center of Humanoid Robotics</div>
-      <div style="font-size:.72rem;color:#64748b;">&dagger; Corresponding author: yan.xia@ustc.edu.cn</div>
+    <div style="margin-top:28px;margin-bottom:32px;color:#e2e8f0;line-height:2.2;">
+      <div style="font-size:1.35rem;">Yuhan Wu<sup>1</sup>&ensp; Zhao Jin<sup>2</sup>&ensp; Tao Li<sup>2</sup>&ensp; Yuheng Zhang<sup>2</sup>&ensp; Zhengping Che<sup>2</sup>&ensp; Jian Tang<sup>2</sup></div>
+      <div style="font-size:1.35rem;">Zhichao Wang<sup>1</sup>&ensp; Shuo Wang<sup>1</sup>&ensp; Jun Jiang<sup>1</sup>&ensp; Xiaobo Li<sup>1</sup>&ensp; Yanyong Zhang<sup>1</sup>&ensp; Yan Xia<sup>1&dagger;</sup></div>
+      <div style="margin-top:20px;display:flex;align-items:center;justify-content:center;gap:40px;">
+        <img src="figures/ustc logo.png" alt="USTC" style="height:72px;">
+        <img src="figures/xhumanoid logo.png" alt="Beijing Innovation Center of Humanoid Robotics" style="height:72px;">
+      </div>
+      <div style="margin-top:12px;font-size:1.15rem;color:#cbd5e1;"><sup>1</sup>University of Science and Technology of China&emsp;<sup>2</sup>Beijing Innovation Center of Humanoid Robotics</div>
+      <div style="font-size:1.15rem;color:#94a3b8;">&dagger; Corresponding author: yan.xia@ustc.edu.cn</div>
     </div>
     <div class="hero-buttons" style="margin-top:0;">
       <a href="#" class="btn btn-primary"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Paper</a>
@@ -454,12 +458,15 @@ footer .footer-links a:hover{color:#60a5fa}
       <h2 class="section-title">BibTeX</h2>
       <div class="cite-block">
         <button class="copy-btn" onclick="copyBib()">Copy</button>
-<pre>@article{labimus2025,
+<pre>@article{labimus2026,
   title   = {Labimus: A Simulation and Benchmark for Humanoid
              Dexterous Manipulation in Chemical Laboratory},
-  author  = {Anonymous Authors},
+  author  = {Wu, Yuhan and Jin, Zhao and Li, Tao and Zhang, Yuheng
+             and Che, Zhengping and Tang, Jian and Wang, Zhichao
+             and Wang, Shuo and Jiang, Jun and Li, Xiaobo
+             and Zhang, Yanyong and Xia, Yan},
   journal = {arXiv preprint},
-  year    = {2025}
+  year    = {2026}
 }</pre>
       </div>
     </div>
